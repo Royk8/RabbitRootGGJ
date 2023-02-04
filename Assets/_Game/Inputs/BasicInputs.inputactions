@@ -1,0 +1,34 @@
+{
+    "name": "BasicInputs",
+    "maps": [
+        {
+            "name": "Test",
+            "id": "de5c8e0f-835c-4bc7-b02f-9855d6189605",
+            "actions": [
+                {
+                    "name": "Axis",
+                    "type": "Value",
+                    "id": "40cbf51e-b80f-4f52-a46c-7bed70cbf622",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "93e8cd55-2717-4bad-9f09-40922d2b3fc7",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
