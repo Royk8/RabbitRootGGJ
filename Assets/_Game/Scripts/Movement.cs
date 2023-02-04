@@ -6,13 +6,14 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private InputActionReference vertical;
+    [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private float speed;
     
     private CharacterController charControl;
     void Start()
     {
         charControl = GetComponent<CharacterController>();
+        _playerInput = GetComponent<PlayerInput>();
     }
 
     // Update is called once per frame
@@ -23,11 +24,13 @@ public class Movement : MonoBehaviour
 
     private void Walk()
     {
-        Vector2 vert = vertical.action.ReadValue<Vector2>();
-        Debug.Log(vert);
+        Vector2 vert = _playerInput.actions["Move"].ReadValue<Vector2>();
+        Vector3 movement = speed * (vert.y * transform.forward + vert.x * transform.right);
 
-        Vector3 movement = speed * vert.y * transform.forward;
+        charControl.SimpleMove(movement);
 
-        charControl.Move(movement);
+        float rot = _playerInput.actions["Look"].ReadValue<Vector2>().x;
+
+        transform.Rotate(new Vector3(0,rot,0));
     }
 }
