@@ -34,6 +34,7 @@ public class FarmerController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Apunalado");
             stab.SetActive(true);
             StartCoroutine(Deativate());
         }
