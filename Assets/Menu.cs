@@ -10,10 +10,30 @@ public class Menu : MonoBehaviour
    
   public void Cambio () 
     {
-        Debug.Log("Cambio");
+        
         SceneManager.LoadScene("Menu");
 
+    }public void CambioCreditos () 
+    {
+        
+        SceneManager.LoadScene("CreditosR");
+
+    }public void CambioSplashScreem () 
+    {
+        
+        SceneManager.LoadScene("SplashScreem");
+        
+
+    }public void CambioSalir () 
+    {
+        
+        Application.Quit();
+        
+
     }
+    
+
+
 
     
     
