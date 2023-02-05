@@ -1881,6 +1881,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5902207579440984399, guid: a42ed9d91bd99b547a95c226e62ee3e2,
+        type: 3}
+      propertyPath: m_MoveSpeed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902207579440984399, guid: a42ed9d91bd99b547a95c226e62ee3e2,
+        type: 3}
+      propertyPath: m_LeftHandMoveAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5902207579440984496, guid: a42ed9d91bd99b547a95c226e62ee3e2,
         type: 3}
       propertyPath: m_Name
