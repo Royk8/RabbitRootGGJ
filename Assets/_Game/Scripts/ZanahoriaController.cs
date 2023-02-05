@@ -66,4 +66,9 @@ public class ZanahoriaController : MonoBehaviour
         if(CheckForUpdate())
             SetTransforms(SolvePositions(points[points.Count-1].position));
     }
+
+    public void SetMovement(Vector3 movement)
+    {
+        SetTransforms(SolvePositions(oldPosition + movement));
+    }
 }
