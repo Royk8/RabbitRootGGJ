@@ -9,9 +9,11 @@ public class ZanahoriaController : MonoBehaviour
     private float[] lenghts;
     private Vector3 oldPosition;
     private float movido;
+    private Animator _animator;
 
     private void Start()
     {
+        _animator = GetComponent<Animator>();
         oldPosition = points[points.Count - 1].position;
         lenghts = new float[points.Count];
 
@@ -75,7 +77,7 @@ public class ZanahoriaController : MonoBehaviour
         movido += movement.y;
         if(movido > 1.1)
         {
-            gameObject.SetActive(false);
+            _animator.Play("GiraZanahoria");
         }
     }
 }

@@ -159,6 +159,102 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1513000475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2059894493579934417}
+    m_Modifications:
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9927499
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9927499
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9927499
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9995547
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.029840691
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561177, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561190, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_Name
+      value: ParticulasDesactivar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053524561190, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190182053824292415, guid: 53e76afff7a0815459194e85f96fc0dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2190182053524561176, guid: 53e76afff7a0815459194e85f96fc0dc, type: 3}
+    - {fileID: 2190182053524561191, guid: 53e76afff7a0815459194e85f96fc0dc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 53e76afff7a0815459194e85f96fc0dc, type: 3}
 --- !u!1001 &1953592871443504442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265,6 +361,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: zanahoriabones123
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: 2703d64106b8f8e459521f9f37f19dc9,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 2703d64106b8f8e459521f9f37f19dc9,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 52f881785f5f29649a67b103234dff9a, type: 2}
+    - target: {fileID: 8879528566716807029, guid: 2703d64106b8f8e459521f9f37f19dc9,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2703d64106b8f8e459521f9f37f19dc9, type: 3}
