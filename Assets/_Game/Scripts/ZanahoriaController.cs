@@ -78,6 +78,7 @@ public class ZanahoriaController : MonoBehaviour
         if(movido > 1.1)
         {
             _animator.Play("GiraZanahoria");
+            Destroy(gameObject, 2);
         }
     }
 }
