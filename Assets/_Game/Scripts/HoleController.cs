@@ -6,23 +6,20 @@ using Random = System.Random;
 
 public class HoleController : MonoBehaviour
 {
-    [SerializeField] private List<Transform> holes;
+    public List<Transform> holes;
     [SerializeField] private GameObject carrotPrefab, montonPrefab;
     [SerializeField] private int filledHoles;
+    public List<int> FilledHolesList;
 
     private void Start()
     {
         List<int> numbers = GenerateUniqueRandomNumbers(0, holes.Count, filledHoles);
-        foreach (var number in numbers)
-        {
-            Debug.Log(number);
-        }
-        Debug.Log(numbers);
+        FilledHolesList = numbers;
+
         for (int i = 0; i < holes.Count; i++)
         {
             if (numbers.Contains(i))
             {
-                Debug.Log($"Instanciando hueco {i}");
                 Instantiate(montonPrefab, holes[i]);
                 Instantiate(carrotPrefab, holes[i]);
             }
