@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 159651237}
   m_Layer: 0
   m_Name: Agarrador
-  m_TagString: Untagged
+  m_TagString: AgarreIzq
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1880,6 +1880,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902207579440984399, guid: a42ed9d91bd99b547a95c226e62ee3e2,
+        type: 3}
+      propertyPath: m_MoveSpeed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902207579440984399, guid: a42ed9d91bd99b547a95c226e62ee3e2,
+        type: 3}
+      propertyPath: m_LeftHandMoveAction.m_UseReference
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5902207579440984496, guid: a42ed9d91bd99b547a95c226e62ee3e2,
         type: 3}

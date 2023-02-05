@@ -8,6 +8,7 @@ public class ZanahoriaController : MonoBehaviour
     [SerializeField] private List<Transform> points;
     private float[] lenghts;
     private Vector3 oldPosition;
+    private float movido;
 
     private void Start()
     {
@@ -69,6 +70,12 @@ public class ZanahoriaController : MonoBehaviour
 
     public void SetMovement(Vector3 movement)
     {
-        SetTransforms(SolvePositions(oldPosition + movement));
+        Vector3 vectorMovimiento = oldPosition - movement;
+        SetTransforms(SolvePositions(vectorMovimiento));
+        movido += movement.y;
+        if(movido > 1.1)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

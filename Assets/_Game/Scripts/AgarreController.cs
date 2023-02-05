@@ -8,32 +8,15 @@ public class AgarreController : MonoBehaviour
 {
 
     public InputActionProperty inputIzq, inputDer;
-    private bool agarreIzq, agarreDer;
+    public bool agarreIzq, agarreDer;
     private bool agarrado;
     private Vector3 oldPosition;
     public ZanahoriaController zana;
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("AgarreIzq"))
-        {
-            agarreIzq = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("AgarreIzq"))
-        {
-            agarreIzq = false;
-        }
-    }
-
     void Start()
     {
         inputIzq.action.Enable();
-        zana = GetComponent<ZanahoriaController>();
     }
 
     void Update()
