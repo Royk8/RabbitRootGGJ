@@ -10,6 +10,7 @@ public class ZanahoriaController : MonoBehaviour
     private Vector3 oldPosition;
     private float movido;
     private Animator _animator;
+    public AudioSource conejo;
 
     private void Start()
     {
@@ -66,8 +67,12 @@ public class ZanahoriaController : MonoBehaviour
 
     private void Update()
     {
-        if(CheckForUpdate())
+        if (CheckForUpdate())
+        {
             SetTransforms(SolvePositions(points[points.Count-1].position));
+            conejo.Play();
+        }
+            
     }
 
     public void SetMovement(Vector3 movement)
