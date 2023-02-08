@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class ZanahoriaController : MonoBehaviour
 {
     [SerializeField] private List<Transform> points;
@@ -12,8 +12,13 @@ public class ZanahoriaController : MonoBehaviour
     private Animator _animator;
     public AudioSource conejo;
 
+
+
+
+
     private void Start()
     {
+       
         _animator = GetComponent<Animator>();
         oldPosition = points[points.Count - 1].position;
         lenghts = new float[points.Count];
@@ -82,8 +87,16 @@ public class ZanahoriaController : MonoBehaviour
         movido += movement.y;
         if(movido > 1.1)
         {
+            
             _animator.Play("GiraZanahoria");
             Destroy(gameObject, 1);
+            
         }
     }
+
+    void OnDestroy()
+    {
+        ControlPuntos.unico.SumarPuntos();
+    }
+
 }

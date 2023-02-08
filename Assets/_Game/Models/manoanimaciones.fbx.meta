@@ -2,7 +2,28 @@ fileFormatVersion: 2
 guid: 90a977d60d0faaf4c834d32a83eefcaa
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 8554889333778402875
+    second: Armature|corazon
+  - first:
+      74: 3327316208377118195
+    second: Armature|corazona
+  - first:
+      74: 2156217771723378068
+    second: Armature|gordo
+  - first:
+      74: 3093387668593937934
+    second: Armature|indice
+  - first:
+      74: 6624347678160798008
+    second: Armature|menique
+  - first:
+      74: -8052843588886877558
+    second: Armature|plana
+  - first:
+      74: -8631373359460441770
+    second: "Armature|pu\xF1o"
   externalObjects: {}
   materials:
     materialImportMode: 2

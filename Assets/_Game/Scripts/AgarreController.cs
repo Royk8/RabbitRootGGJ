@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class AgarreController : MonoBehaviour
 {
-
+    
     public InputActionProperty inputIzq, inputDer;
     public bool agarreIzq, agarreDer;
     private bool agarrado;
@@ -28,6 +29,7 @@ public class AgarreController : MonoBehaviour
             {
                 Vector3 movement = oldPosition - ControlesSingleton.Instance.agarreIzq.position;
                 zana.SetMovement(movement);
+                
             }
             oldPosition = ControlesSingleton.Instance.agarreIzq.position;
             agarrado = true;
