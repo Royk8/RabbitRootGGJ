@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Game/Scenes/Splash.unity
+    path: Assets/_Game/Scripts/Scenes/Splash.unity
     guid: 6ccb2614b0bc91e48b61e4cb5d212665
   - enabled: 1
-    path: Assets/_Game/Scenes/Menu.unity
+    path: Assets/_Game/Scripts/Scenes/Menu.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/_Game/Scenes/CreditosR.unity
+    path: Assets/_Game/Scripts/Scenes/CreditosR.unity
     guid: 329f3d5eab3927d43941acf79f636fc6
   - enabled: 1
-    path: Assets/_Game/Scenes/Laberint.unity
+    path: Assets/_Game/Scripts/Scenes/Laberint.unity
     guid: e231bc27963a88c4cb8167c455a885d4
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4064f18fdef78ea4494615a55db4e2ac,
