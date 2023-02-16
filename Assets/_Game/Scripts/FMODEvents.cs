@@ -32,4 +32,5 @@ public class FMODEvents : MonoBehaviour
     
     [field: Header("Farmer SFX")]
     [field: SerializeField] public EventReference FarmerStab { get; private set; }
+    [field: SerializeField] public EventReference FarmerPoison { get; private set; }
 }

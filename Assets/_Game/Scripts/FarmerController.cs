@@ -9,7 +9,8 @@ public class FarmerController : MonoBehaviour
     [SerializeField] private HoleController _holeController;
     private List<int> FreeHoles;
     [SerializeField] private float initWait, loopWait;
-    [SerializeField] private GameObject stab;
+    [SerializeField] private GameObject stab, poison;
+    private bool attacking;
         
     IEnumerator Start()
     {
@@ -24,9 +25,9 @@ public class FarmerController : MonoBehaviour
         WaitForSeconds w = new WaitForSeconds(loopWait);
         while (true)
         {
-            transform.position = _holeController.holes[FreeHoles[Random.Range(0, FreeHoles.Count)]].position;
+            if(!attacking)
+                transform.position = _holeController.holes[FreeHoles[Random.Range(0, FreeHoles.Count)]].position;
             yield return w;
-            
         }
     }
 
@@ -35,17 +36,41 @@ public class FarmerController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Apunalado");
-            StartCoroutine(StabRabbit());
+            int rnd = Random.Range(0, 2);
+            if (rnd == 0)
+            {
+                StartCoroutine(StabRabbit());
+            }
+            else
+            {
+                StartCoroutine(PoisonRabbit());
+            }
+            
         }
         
     }
 
     private IEnumerator StabRabbit()
     {
+        if (attacking) yield return null;
+        attacking = true;
         AudioManager.Instance.PlayOneShot(FMODEvents.Instance.FarmerStab, transform.position);
         //yield return new WaitForSeconds(1);
         stab.SetActive(true);
         yield return new WaitForSeconds(3);
         stab.SetActive(false);
+        attacking = false;
+    }
+
+    private IEnumerator PoisonRabbit()
+    {
+        if (attacking) yield return null;
+        attacking = true;
+        AudioManager.Instance.PlayOneShot(FMODEvents.Instance.FarmerPoison, transform.position);
+        //yield return new WaitForSeconds(1);
+        poison.SetActive(true);
+        yield return new WaitForSeconds(20);
+        poison.SetActive(false);
+        attacking = false;
     }
 }

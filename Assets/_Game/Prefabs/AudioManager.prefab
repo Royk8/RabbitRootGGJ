@@ -86,6 +86,13 @@ MonoBehaviour:
       Data3: -1765644909
       Data4: -1847937225
     Path: event:/Stab
+  <FarmerPoison>k__BackingField:
+    Guid:
+      Data1: -724697196
+      Data2: 1184078378
+      Data3: 1045648806
+      Data4: -1639941002
+    Path: event:/PoisonRelease
 --- !u!1 &7924930292207145279
 GameObject:
   m_ObjectHideFlags: 0

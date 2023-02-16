@@ -174,6 +174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5519985484044618974, guid: a7942128a12b9e34bb49d8fcddfe83c7,
         type: 3}
+      propertyPath: poison
+      value: 
+      objectReference: {fileID: 506749485}
+    - target: {fileID: 5519985484044618974, guid: a7942128a12b9e34bb49d8fcddfe83c7,
+        type: 3}
       propertyPath: initWait
       value: 1
       objectReference: {fileID: 0}
@@ -473,6 +478,12 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &506749485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5377308615573243393, guid: a7942128a12b9e34bb49d8fcddfe83c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 22182969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &892615041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -480,31 +491,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7924930291720189159, guid: 0e1470a3f5097eb46830f380752cca2d,
-        type: 3}
-      propertyPath: <FarmerStab>k__BackingField.Path
-      value: event:/Stab
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924930291720189159, guid: 0e1470a3f5097eb46830f380752cca2d,
-        type: 3}
-      propertyPath: <FarmerStab>k__BackingField.Guid.Data1
-      value: 402997447
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924930291720189159, guid: 0e1470a3f5097eb46830f380752cca2d,
-        type: 3}
-      propertyPath: <FarmerStab>k__BackingField.Guid.Data2
-      value: 1290379850
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924930291720189159, guid: 0e1470a3f5097eb46830f380752cca2d,
-        type: 3}
-      propertyPath: <FarmerStab>k__BackingField.Guid.Data3
-      value: -1765644909
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924930291720189159, guid: 0e1470a3f5097eb46830f380752cca2d,
-        type: 3}
-      propertyPath: <FarmerStab>k__BackingField.Guid.Data4
-      value: -1847937225
-      objectReference: {fileID: 0}
     - target: {fileID: 7924930292207145277, guid: 0e1470a3f5097eb46830f380752cca2d,
         type: 3}
       propertyPath: m_RootOrder
