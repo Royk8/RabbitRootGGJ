@@ -67,6 +67,7 @@ GameObject:
   - component: {fileID: 6317271986453544233}
   - component: {fileID: 875463363534192212}
   - component: {fileID: 7016246331549741162}
+  - component: {fileID: 249557100}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -153,6 +154,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &249557100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2822116382620497516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 8.96, z: 10}
+  m_Center: {x: 0, y: 4.48, z: -0}
 --- !u!1 &5136431775316504411
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,8 +216,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _holeController: {fileID: 0}
-  initWait: 0
-  loopWait: 0
+  initWait: 5
+  loopWait: 10
   stab: {fileID: 844707879925028198}
 --- !u!65 &-5153185607740211784
 BoxCollider:
@@ -216,8 +230,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.529593, y: 1, z: 2.6890879}
-  m_Center: {x: -0.02499342, y: 0, z: 0.015437424}
+  m_Size: {x: 2.529593, y: 2.2944822, z: 2.6890879}
+  m_Center: {x: -0.02499342, y: -0.647241, z: 0.015437365}
 --- !u!1 &5377308615573243393
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,3 +404,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1285514719141857093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2095995728767859220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 03a73b0ecf5ea4b459367fc137172769,
+    type: 3}
+  m_PrefabInstance: {fileID: 1285514719141857093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1168079056
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095995728767859220}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f04bf64f1430e4e47b8581e2c384e8ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

@@ -35,14 +35,16 @@ public class FarmerController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Apunalado");
-            stab.SetActive(true);
-            StartCoroutine(Deativate());
+            StartCoroutine(StabRabbit());
         }
         
     }
 
-    private IEnumerator Deativate()
+    private IEnumerator StabRabbit()
     {
+        AudioManager.Instance.PlayOneShot(FMODEvents.Instance.FarmerStab, transform.position);
+        //yield return new WaitForSeconds(1);
+        stab.SetActive(true);
         yield return new WaitForSeconds(3);
         stab.SetActive(false);
     }

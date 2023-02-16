@@ -1,8 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
+using Unity.VisualScripting;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
+
 public class ZanahoriaController : MonoBehaviour
 {
     [SerializeField] private List<Transform> points;
@@ -10,7 +15,7 @@ public class ZanahoriaController : MonoBehaviour
     private Vector3 oldPosition;
     private float movido;
     private Animator _animator;
-    public AudioSource conejo;
+    private EventInstance pullCarrot;
 
 
 
@@ -18,7 +23,7 @@ public class ZanahoriaController : MonoBehaviour
 
     private void Start()
     {
-       
+        pullCarrot = AudioManager.Instance.CreateInstance(FMODEvents.Instance.CarrotPulled);
         _animator = GetComponent<Animator>();
         oldPosition = points[points.Count - 1].position;
         lenghts = new float[points.Count];
@@ -75,7 +80,16 @@ public class ZanahoriaController : MonoBehaviour
         if (CheckForUpdate())
         {
             SetTransforms(SolvePositions(points[points.Count-1].position));
-            conejo.Play();
+
+            pullCarrot.getPlaybackState(out PLAYBACK_STATE playbackState);
+            if(playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                pullCarrot.start();
+            }
+        }
+        else
+        {
+            pullCarrot.stop(STOP_MODE.ALLOWFADEOUT);
         }
             
     }
