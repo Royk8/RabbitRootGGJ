@@ -23,9 +23,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference RelaxedTheme { get; private set; }
     
     [field: Header("Carrot SFX")]
-    [field: SerializeField] public EventReference CarrotTouched { get; private set; }
     [field: SerializeField] public EventReference CarrotPulled { get; private set; }
-    [field: SerializeField] public EventReference CarrotGotten { get; private set; }
     
     [field: Header("Rabbit SFX")]
     [field: SerializeField] public EventReference RabbitSteps { get; private set; }
@@ -33,4 +31,6 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Farmer SFX")]
     [field: SerializeField] public EventReference FarmerStab { get; private set; }
     [field: SerializeField] public EventReference FarmerPoison { get; private set; }
+    [field: SerializeField] public EventReference FarmerAlert { get; private set; }
+    
 }

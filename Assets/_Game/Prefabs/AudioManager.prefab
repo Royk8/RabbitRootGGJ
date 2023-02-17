@@ -51,13 +51,6 @@ MonoBehaviour:
       Data3: -1355396674
       Data4: -24154371
     Path: event:/Background
-  <CarrotTouched>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   <CarrotPulled>k__BackingField:
     Guid:
       Data1: -1788754798
@@ -65,13 +58,6 @@ MonoBehaviour:
       Data3: -154766691
       Data4: 782830883
     Path: event:/PullCarrot
-  <CarrotGotten>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   <RabbitSteps>k__BackingField:
     Guid:
       Data1: 696189695
@@ -93,6 +79,13 @@ MonoBehaviour:
       Data3: 1045648806
       Data4: -1639941002
     Path: event:/PoisonRelease
+  <FarmerAlert>k__BackingField:
+    Guid:
+      Data1: -1555489363
+      Data2: 1236359374
+      Data3: -403240306
+      Data4: -2066381270
+    Path: event:/Alert
 --- !u!1 &7924930292207145279
 GameObject:
   m_ObjectHideFlags: 0
