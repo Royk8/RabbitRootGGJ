@@ -11,7 +11,7 @@ int flexionIndice;
 int flexionCorazon;
 int flexionAnular;
 String enviado;
-char separador = '|';
+//char separador = '|';
 int enteroEnviado;
 
 void setup() 
@@ -61,16 +61,16 @@ void loop()
     flexionAnular = 0;
   }
 
-  //int datoIndice = (int) round(flexionIndice*9/180);
-  //int datoCorazon = (int) round(flexionCorazon*9/180);
-  //int datoAnular = (int) round(flexionAnular*9/180);
+  int datoIndice = (int) round(flexionIndice*9/180);
+  int datoCorazon = (int) round(flexionCorazon*9/180);
+  int datoAnular = (int) round(flexionAnular*9/180);
 
-  //enteroEnviado = (datoIndice*100)+(datoCorazon*10)+(datoAnular);
-  enviado += flexionIndice;
-  enviado += separador; 
-  enviado += flexionCorazon;
-  enviado += separador;
-  enviado += flexionAnular;
+  enteroEnviado = (datoIndice*100)+(datoCorazon*10)+(datoAnular);
+  //enviado += flexionIndice;
+  //enviado += separador; 
+  //enviado += flexionCorazon;
+  //enviado += separador;
+  //enviado += flexionAnular;
 /*
   enviado += lecturaIndice;
   enviado += separador; 
@@ -78,8 +78,8 @@ void loop()
   enviado += separador;
   enviado += lecturaAnular;
   */
-  //Serial.println(enteroEnviado);
-  Serial.println(enviado);
-  enviado =  "";
+  Serial.println(enteroEnviado);
+  //Serial.println(enviado);
+  //enviado =  "";
   delay(300);
 }

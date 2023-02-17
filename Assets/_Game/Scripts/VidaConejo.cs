@@ -1,18 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class VidaConejo : MonoBehaviour
 {
-    // Start is called before the first frame update
+    #region Singleton
+    public static VidaConejo Instance;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            DestroyImmediate(gameObject);
+            return;
+        }
+        Instance = this;
+    }
+    #endregion
+    public float vidaInicial;
+    public float vidaActual;
+
+        
+    float vidaPorcentual;
+    
     void Start()
     {
+        vidaInicial = vidaActual;
+        
         
     }
-
-    // Update is called once per frame
-    void Update()
+        
+    public void CausarDaño (float cuanto)
     {
-        
+        vidaActual -= cuanto;
+        if (vidaActual <=0)
+        {
+            vidaActual = 0;
+        }
+        vidaPorcentual = vidaActual / vidaInicial;
     }
+    
+    
 }
